@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<style>
+		li a{
+			color: white;
+			font-size: 13pt;
+		}
+		#des{
+			margin-left: 60%;
+		}
+		
+		.imageLogo{
+			margin-top: 5%;
+			margin-left: 130%;
+		}
+	</style>
+
+  <title>Operator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+    
+<body>
+
+	<nav class="navbar navbar-dark bg-primary">
+		<div class="container-fluid">
+		  	<div class="navbar-header">
+			  	<div class="imageLogo">
+					<img src="rescue_logo.png" alt="Rescue Logo" height="45" width="60" >
+			  	</div>
+		  	</div>
+		  <ul class="nav navbar-nav" id="des">
+			
+			<li><a href="#">Proud to be Rescuer, provide service 24/7</a></li>
+			
+		  </ul>
+		</div>
+	  </nav>
+
+	<!-- <nav class="navbar navbar-dark bg-primary">
+		<div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar">cksdjfjks</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">Logo</a>
+			</div>
+	  </nav> -->
+
+	<!-- <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: deepskyblue;">
+	<div class="container">
+	  <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">Logo</a>
+	  </div>
+	  <div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav pull-right">
+		  <li class="active"><a href="#">Home</a></li>
+		  <li><a href="#">Page</a></li>
+		  <li><a href="#">Link</a></li>
+		</ul>
+	  </div>
+	</div>
+  </nav> -->
+
+	<div class="container">
+    <!-- <h1>Click the filter icon <small>(<i class="glyphicon glyphicon-filter"></i>)</small></h1> -->
+    	<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Acciden Detail</h3>
+						<!-- <div class="pull-right">
+							<span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+								<i class="glyphicon glyphicon-filter"></i>
+							</span>
+						</div> -->
+					</div>
+					<!-- <div class="panel-body">
+						<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Filter Developers" />
+					</div> -->
+					<table class="table table-hover" id="dev-table">
+						<thead>
+							<tr>
+								<!-- <th>#</th> -->
+								<th>User Data</th>
+								<th>Deails</th>
+								<!-- <th>Username</th> -->
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<!-- <td> <b> 1 </b> </td> -->
+								<td> <b> Name </b> </td>
+								<td>Titush</td>
+								<!-- <td>kilgore</td> -->
+							</tr>
+							<tr>
+								<!-- <td> <b> 2 </b> </td> -->
+								<td> <b> Contact </b> </td>
+								<td>0333899927</td>
+								<!-- <td>boblahblah</td> -->
+							</tr>
+							<tr>
+								<!-- <td> <b> 3 </b></td> -->
+								<td> <b> Location </b> </td>
+								<td>35.99994, 21.33344</td>
+								<!-- <td>penceyreject</td> -->
+							</tr>
+							<tr>
+								<td> <b> Date </b> </td>
+								<td>01-05-20</td>
+							</tr>
+							<tr>
+								<td> <b> Time </b></td>
+								<td>7:30</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+            </div>
+            
+            <div class="col-md-2">
+
+                <div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Acciden Type</h3>
+					</div>
+
+                    <table class="table table-bordered table-hover" id="table_accident">
+                        <thead>
+                            <tr >
+                                <th class="text-center">
+                                    Accidents
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr id='addr0'>
+                                <td>
+									<form style="margin-left: 20%;">
+										<div class="checkbox">
+										  <label><input type="checkbox" value="">Accident</label>
+										</div>
+										<div class="checkbox">
+										  <label><input type="checkbox" value="check" notchecked>Fire</label>
+										</div>
+										<div class="checkbox disabled">
+										  <label><input type="checkbox" value="checked" >Medical</label>
+										</div>
+										<div class="checkbox">
+											<label><input type="checkbox" value="">Crime</label>
+										</div>
+										<div class="checkbox">
+											<label><input type="checkbox" value="check" notchecked>Drowning</label>
+										</div>
+										<div class="checkbox disabled">
+											<label><input type="checkbox" value="checked" >Building Collapse</label>
+										</div>
+									</form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Call History</h3>
+                    </div>
+                    
+                    <table class="table table-hover" id="dev-table">
+						<thead>
+							<tr>
+								<!-- <th>#</th> -->
+								<th>User Data</th>
+								<th>Deails</th>
+								<!-- <th>Username</th> -->
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<!-- <td> <b> 1 </b> </td> -->
+								<td> <b> Contact </b> </td>
+								<td>03347766555</td>
+								<!-- <td>kilgore</td> -->
+							</tr>
+							<tr>
+								<!-- <td> <b> 2 </b> </td> -->
+								<td> <b> Total Calls </b> </td>
+								<td>1</td>
+								<!-- <td>boblahblah</td> -->
+							</tr>
+							<tr>
+								<!-- <td> <b> 3 </b></td> -->
+								<td> <b> Fake </b> </td>
+								<td>2</td>
+								<!-- <td>penceyreject</td> -->
+							</tr>
+						</tbody>
+					</table>
+				   </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
